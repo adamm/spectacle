@@ -97,6 +97,16 @@
 
 #pragma mark -
 
+- (IBAction)moveFrontMostWindowToNextThird: (id)sender {
+    
+}
+
+- (IBAction)moveFrontMostWindowToPreviousThird: (id)sender {
+    
+}
+
+#pragma mark -
+
 - (IBAction)undoLastWindowAction: (id)sender {
     [myWindowPositionManager undoLastWindowAction];
 }
