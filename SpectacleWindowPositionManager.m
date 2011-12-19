@@ -294,6 +294,10 @@ static SpectacleWindowPositionManager *sharedInstance = nil;
         }
     }
     
+    if (MovingToThirdOfDisplay(action)) {
+        
+    }
+    
     if ((action >= SpectacleWindowActionLeftHalf) && (action <= SpectacleWindowActionLowerLeft)) {
         windowRect.size.width = windowRect.size.width - 1.0f;
     }
