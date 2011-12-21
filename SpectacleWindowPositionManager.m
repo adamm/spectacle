@@ -356,7 +356,7 @@ static SpectacleWindowPositionManager *sharedInstance = nil;
     for (i = 0; i < 3; i++) {
         CGRect thirdOfScreen = visibleFrameOfScreen;
         
-        thirdOfScreen.origin.x = floor(visibleFrameOfScreen.size.width / 3.0f) * i;
+        thirdOfScreen.origin.x = visibleFrameOfScreen.origin.x + (floor(visibleFrameOfScreen.size.width / 3.0f) * i);
         thirdOfScreen.size.width = floor(visibleFrameOfScreen.size.width / 3.0f);
 
         [result addObject: [SpectacleHistoryItem historyItemFromAccessibilityElement: nil windowRect: thirdOfScreen]];
