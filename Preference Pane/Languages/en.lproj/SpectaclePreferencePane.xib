@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">1070</int>
+		<int key="IBDocument.SystemTarget">1060</int>
 		<string key="IBDocument.SystemVersion">11C74</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
 		<string key="IBDocument.AppKitVersion">1138.23</string>
@@ -64,6 +64,7 @@
 							<string key="NSFrame">{{238, 32}, {417, 417}}</string>
 							<reference key="NSSuperview" ref="1037298196"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="740980774"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="680769229">
 									<string key="NSIdentifier">1</string>
@@ -205,7 +206,7 @@
 												<string key="NSFrame">{{194, 15}, {140, 21}}</string>
 												<reference key="NSSuperview" ref="740980774"/>
 												<reference key="NSWindow"/>
-												<reference key="NSNextKeyView" ref="532494296"/>
+												<reference key="NSNextKeyView" ref="831456543"/>
 												<string key="NSClassName">ZeroKitHotKeyRecorder</string>
 											</object>
 											<object class="NSCustomView" id="104939073">
@@ -487,7 +488,7 @@
 												<object class="NSTextFieldCell" key="NSCell" id="938560106">
 													<int key="NSCellFlags">68288064</int>
 													<int key="NSCellFlags2">71304192</int>
-													<string key="NSContents">Undo:</string>
+													<string key="NSContents">Next Third:</string>
 													<reference key="NSSupport" ref="558112443"/>
 													<reference key="NSControlView" ref="161834297"/>
 													<reference key="NSBackgroundColor" ref="296516534"/>
@@ -512,7 +513,7 @@
 												<object class="NSTextFieldCell" key="NSCell" id="31504468">
 													<int key="NSCellFlags">68288064</int>
 													<int key="NSCellFlags2">71304192</int>
-													<string key="NSContents">Redo:</string>
+													<string key="NSContents">Previous Third:</string>
 													<reference key="NSSupport" ref="558112443"/>
 													<reference key="NSControlView" ref="773783822"/>
 													<reference key="NSBackgroundColor" ref="296516534"/>
@@ -523,6 +524,56 @@
 												<reference key="NSNextResponder" ref="131596099"/>
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{194, 160}, {140, 21}}</string>
+												<reference key="NSSuperview" ref="131596099"/>
+												<reference key="NSNextKeyView" ref="310485084"/>
+												<string key="NSClassName">ZeroKitHotKeyRecorder</string>
+											</object>
+											<object class="NSTextField" id="310485084">
+												<reference key="NSNextResponder" ref="131596099"/>
+												<int key="NSvFlags">268</int>
+												<string key="NSFrame">{{47, 104}, {142, 17}}</string>
+												<reference key="NSSuperview" ref="131596099"/>
+												<reference key="NSNextKeyView" ref="829832186"/>
+												<bool key="NSEnabled">YES</bool>
+												<object class="NSTextFieldCell" key="NSCell" id="80198428">
+													<int key="NSCellFlags">68288064</int>
+													<int key="NSCellFlags2">71304192</int>
+													<string key="NSContents">Undo:</string>
+													<reference key="NSSupport" ref="558112443"/>
+													<reference key="NSControlView" ref="310485084"/>
+													<reference key="NSBackgroundColor" ref="296516534"/>
+													<reference key="NSTextColor" ref="953564374"/>
+												</object>
+											</object>
+											<object class="NSCustomView" id="829832186">
+												<reference key="NSNextResponder" ref="131596099"/>
+												<int key="NSvFlags">268</int>
+												<string key="NSFrame">{{194, 102}, {140, 21}}</string>
+												<reference key="NSSuperview" ref="131596099"/>
+												<reference key="NSNextKeyView" ref="956701311"/>
+												<string key="NSClassName">ZeroKitHotKeyRecorder</string>
+											</object>
+											<object class="NSTextField" id="956701311">
+												<reference key="NSNextResponder" ref="131596099"/>
+												<int key="NSvFlags">268</int>
+												<string key="NSFrame">{{47, 75}, {142, 17}}</string>
+												<reference key="NSSuperview" ref="131596099"/>
+												<reference key="NSNextKeyView" ref="1022945319"/>
+												<bool key="NSEnabled">YES</bool>
+												<object class="NSTextFieldCell" key="NSCell" id="831124724">
+													<int key="NSCellFlags">68288064</int>
+													<int key="NSCellFlags2">71304192</int>
+													<string key="NSContents">Redo:</string>
+													<reference key="NSSupport" ref="558112443"/>
+													<reference key="NSControlView" ref="956701311"/>
+													<reference key="NSBackgroundColor" ref="296516534"/>
+													<reference key="NSTextColor" ref="953564374"/>
+												</object>
+											</object>
+											<object class="NSCustomView" id="1022945319">
+												<reference key="NSNextResponder" ref="131596099"/>
+												<int key="NSvFlags">268</int>
+												<string key="NSFrame">{{194, 73}, {140, 21}}</string>
 												<reference key="NSSuperview" ref="131596099"/>
 												<reference key="NSNextKeyView" ref="831456543"/>
 												<string key="NSClassName">ZeroKitHotKeyRecorder</string>
@@ -861,22 +912,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">myUndoLastMoveHotKeyRecorder</string>
-						<reference key="source" ref="294453543"/>
-						<reference key="destination" ref="18761435"/>
-					</object>
-					<int key="connectionID">298</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">myRedoLastMoveHotKeyRecorder</string>
-						<reference key="source" ref="294453543"/>
-						<reference key="destination" ref="984145013"/>
-					</object>
-					<int key="connectionID">302</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">mySpectacleVersionTextField</string>
 						<reference key="source" ref="294453543"/>
 						<reference key="destination" ref="894938083"/>
@@ -898,6 +933,38 @@
 						<reference key="destination" ref="823474349"/>
 					</object>
 					<int key="connectionID">367</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">myUndoLastMoveHotKeyRecorder</string>
+						<reference key="source" ref="294453543"/>
+						<reference key="destination" ref="829832186"/>
+					</object>
+					<int key="connectionID">374</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">myRedoLastMoveHotKeyRecorder</string>
+						<reference key="source" ref="294453543"/>
+						<reference key="destination" ref="1022945319"/>
+					</object>
+					<int key="connectionID">375</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">myMoveToNextThirdHotKeyRecorder</string>
+						<reference key="source" ref="294453543"/>
+						<reference key="destination" ref="18761435"/>
+					</object>
+					<int key="connectionID">376</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">myMoveToPreviousThirdHotKeyRecorder</string>
+						<reference key="source" ref="294453543"/>
+						<reference key="destination" ref="984145013"/>
+					</object>
+					<int key="connectionID">377</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -983,6 +1050,10 @@
 							<reference ref="18761435"/>
 							<reference ref="773783822"/>
 							<reference ref="984145013"/>
+							<reference ref="310485084"/>
+							<reference ref="829832186"/>
+							<reference ref="956701311"/>
+							<reference ref="1022945319"/>
 						</array>
 						<reference key="parent" ref="563872776"/>
 					</object>
@@ -1392,6 +1463,42 @@
 						<reference key="object" ref="642592455"/>
 						<reference key="parent" ref="823474349"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">368</int>
+						<reference key="object" ref="310485084"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="80198428"/>
+						</array>
+						<reference key="parent" ref="131596099"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">369</int>
+						<reference key="object" ref="829832186"/>
+						<reference key="parent" ref="131596099"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">370</int>
+						<reference key="object" ref="956701311"/>
+						<array class="NSMutableArray" key="children">
+							<reference ref="831124724"/>
+						</array>
+						<reference key="parent" ref="131596099"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">371</int>
+						<reference key="object" ref="1022945319"/>
+						<reference key="parent" ref="131596099"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">372</int>
+						<reference key="object" ref="831124724"/>
+						<reference key="parent" ref="956701311"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">373</int>
+						<reference key="object" ref="80198428"/>
+						<reference key="parent" ref="310485084"/>
+					</object>
 				</array>
 			</object>
 			<dictionary class="NSMutableDictionary" key="flattenedProperties">
@@ -1467,13 +1574,19 @@
 				<string key="363.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="365.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="366.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="368.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="369.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="370.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="372.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="373.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="6.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">367</int>
+			<int key="maxID">377</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1523,6 +1636,8 @@
 						<string key="myMoveToLeftHotKeyRecorder">ZeroKitHotKeyRecorder</string>
 						<string key="myMoveToLowerLeftHotKeyRecorder">ZeroKitHotKeyRecorder</string>
 						<string key="myMoveToLowerRightHotKeyRecorder">ZeroKitHotKeyRecorder</string>
+						<string key="myMoveToNextThirdHotKeyRecorder">ZeroKitHotKeyRecorder</string>
+						<string key="myMoveToPreviousThirdHotKeyRecorder">ZeroKitHotKeyRecorder</string>
 						<string key="myMoveToRightDisplayHotKeyRecorder">ZeroKitHotKeyRecorder</string>
 						<string key="myMoveToRightHotKeyRecorder">ZeroKitHotKeyRecorder</string>
 						<string key="myMoveToTopDisplayHotKeyRecorder">ZeroKitHotKeyRecorder</string>
@@ -1573,6 +1688,14 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="myMoveToLowerRightHotKeyRecorder">
 							<string key="name">myMoveToLowerRightHotKeyRecorder</string>
+							<string key="candidateClassName">ZeroKitHotKeyRecorder</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="myMoveToNextThirdHotKeyRecorder">
+							<string key="name">myMoveToNextThirdHotKeyRecorder</string>
+							<string key="candidateClassName">ZeroKitHotKeyRecorder</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="myMoveToPreviousThirdHotKeyRecorder">
+							<string key="name">myMoveToPreviousThirdHotKeyRecorder</string>
 							<string key="candidateClassName">ZeroKitHotKeyRecorder</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="myMoveToRightDisplayHotKeyRecorder">
@@ -1641,6 +1764,10 @@
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
+		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.macosx</string>
+			<real value="1060" key="NS.object.0"/>
+		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
